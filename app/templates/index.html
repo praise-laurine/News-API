@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to News Bulletin </title>
-        {% endif %}
-    </head>
-    <body>
-        
+{% import 'macros.html as macro%'}
 
-    </body>
-</html>
+
+<div class="container" id="allsource">
+   <div class="overlay">
+    <h2>General News</h2>
+    {{ macro.display_new_source(general)}}
+
+    <h2>Business News</h2>
+    {{ macro.display_new_source(business)}}
+
+    <h2>Sports News</h2>
+    {{ macro.display_new_source(sports)}}
+    
+    <h2>Tchnology News</h2>
+    {{ macro.display_new_source(technology)}}
+</div>
+</div>
+
