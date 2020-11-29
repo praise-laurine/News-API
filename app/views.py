@@ -24,7 +24,10 @@ def sourceAticles(id):
     View the article page function that returns the article details page and its data
     '''
 
-    return render_template('sourceArticles.html')
+    all_articles = articles_source(id)
+    print(all_articles)
+    source = id
+    return render_template('sourceArticles.html',articles = all_articles, source = source)
  
-
+  
 

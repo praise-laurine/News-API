@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,10 +9,18 @@
         {% endif %}
     </head>
     <body>
-        <!--Content nlock-->
+        Content nlock
 
         {% block content %}
 
         {% endblock%}
     </body>
-</html>
+</html> -->
+
+
+{% extends 'bootstrap/base.html'%}
+
+<!-- Navbar block  --> 
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
