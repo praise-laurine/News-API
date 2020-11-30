@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+h3{
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Gabriela', serif;
+
+
+}
+.container-fluid{
+    background-color: red;
+}
+
+#sources{
+  background-image: url('../images/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}

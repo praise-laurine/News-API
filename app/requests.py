@@ -101,3 +101,18 @@ def process_articles(articles_list):
             articles_object.append(articles_result)
 
     return articles_object
+
+def search_articles(article_name):
+    search_articles_url = articles_url.format(article_name,api_key)
+
+    with urllib.request.urlopen(search_articles_url) as url:
+        search_article_data = url.read()
+        search_article_response = json.loads(search_article_data)
+        
+        search_article_results = None 
+
+        if search_article_response['articles']:
+            search_article_list = search_article_response['articles']
+            search_article_results = process_article_search(search_article_list)
+
+    return search_article_results           

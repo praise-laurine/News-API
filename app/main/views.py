@@ -13,7 +13,10 @@ def index():
     sports_sources = get_sources('sports')
     technology_sources = get_sources('technology')
     entertainment_sources = get_sources('entertainment')
-    title = "News Highlighter"
+    title = "Home - News Highlighter"
+    
+    
+
     
 
     return render_template('index.html', title=title, sources=sources, sports_sources=sports_sources, technology_sources=technology_sources, entertainment_sources=entertainment_sources)
@@ -29,3 +32,18 @@ def articles(id):
     title = f'NH | {id}'
 
     return render_template('articles.html', title=title, articles=articles)
+
+# @main.route('/search/<article_name>')
+# def articleSearch(article_name):
+#     '''
+#     View function to display the search results
+#     '''
+
+#     search_article_list = article_name.split("")
+#     article_name_format = "+".join(search_article_list)
+#     searched_articles = searched_articles(article_name_format)
+#     title = f'search results for {article_name}'
+
+#     return render_template('search.html', articles = searched_articles)
+
+
