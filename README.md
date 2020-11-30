@@ -3,7 +3,7 @@
 ### Author: [praise-laurine](https://github.com/praise-laurine)
 
 ## Description
-This project is a python application that manages login and signup credentials of a person for various accounts i.e. username and passwords for each account. It also stores the passwords and generates a unique password for a user if they do not want to generate new passwords by themselves.
+This is an application that will help people who want to get realtime news withouth having to watch TV for the news. It consumes News Api
 
 # Set Up & Instalation Guide
 - After my repository's name, Select Clone/download.
