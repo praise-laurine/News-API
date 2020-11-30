@@ -3,11 +3,12 @@
 h3{
   /* font-family: 'Libre Baskerville', serif; */
   font-family: 'Gabriela', serif;
+  color: white;
 
 
 }
 .container-fluid{
-    background-color: red;
+    background-color: darkcyan;
 }
 
 #sources{
@@ -16,6 +17,7 @@ h3{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-
 }
+/* .form-control input{
+  width: 50%;
+} */
