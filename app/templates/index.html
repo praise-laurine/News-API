@@ -13,7 +13,10 @@
 
 <!-- Content block -->
 {% block content%}
+<div class="overlay">
 <div class="container-fluid" id="sources">
+  
+ 
   <h3 class="text text-center">Business News Feed</h3>
   <hr>
   {{ macro.displaySourceList(sources)}}
@@ -30,6 +33,7 @@
   <hr>
   {{ macro.displaySourceList(sports_sources)}}
 
+</div>
 </div>
 
 

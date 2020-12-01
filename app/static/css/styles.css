@@ -7,7 +7,7 @@ h3{
 
 
 }
-.container-fluid{
+#nav{
     background-color: darkcyan;
 }
 
@@ -21,3 +21,12 @@ h3{
 /* .form-control input{
   width: 50%;
 } */
+
+#sourcename{
+  font-family: 'Gabriela', serif;
+  font-weight: bold;
+  background-color: #6bc5d2;
+}
+.overlay{
+  background-color: rgba(39, 42, 42, 0.884);
+}
